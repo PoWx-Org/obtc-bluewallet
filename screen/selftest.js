@@ -48,19 +48,19 @@ export default class Selftest extends Component {
 
       //
 
-      if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-        await BlueElectrum.ping();
-        await BlueElectrum.waitTillConnected();
-        const addr4elect = '3GCvDBAktgQQtsbN6x5DYiQCMmgZ9Yk8BK';
-        const electrumBalance = await BlueElectrum.getBalanceByAddress(addr4elect);
-        if (electrumBalance.confirmed !== 51432)
-          throw new Error('BlueElectrum getBalanceByAddress failure, got ' + JSON.stringify(electrumBalance));
-
-        const electrumTxs = await BlueElectrum.getTransactionsByAddress(addr4elect);
-        if (electrumTxs.length !== 1) throw new Error('BlueElectrum getTransactionsByAddress failure, got ' + JSON.stringify(electrumTxs));
-      } else {
-        // skipping RN-specific test'
-      }
+      // if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
+      //   await BlueElectrum.ping();
+      //   await BlueElectrum.waitTillConnected();
+      //   const addr4elect = '3GCvDBAktgQQtsbN6x5DYiQCMmgZ9Yk8BK';
+      //   const electrumBalance = await BlueElectrum.getBalanceByAddress(addr4elect);
+      //   if (electrumBalance.confirmed !== 51432)
+      //     throw new Error('BlueElectrum getBalanceByAddress failure, got ' + JSON.stringify(electrumBalance));
+      //
+      //   const electrumTxs = await BlueElectrum.getTransactionsByAddress(addr4elect);
+      //   if (electrumTxs.length !== 1) throw new Error('BlueElectrum getTransactionsByAddress failure, got ' + JSON.stringify(electrumTxs));
+      // } else {
+      //   // skipping RN-specific test'
+      // }
 
       //
 
@@ -177,12 +177,12 @@ export default class Selftest extends Component {
 
         //
 
-        const hd4 = new HDSegwitBech32Wallet();
-        hd4._xpub = 'zpub6r7jhKKm7BAVx3b3nSnuadY1WnshZYkhK8gKFoRLwK9rF3Mzv28BrGcCGA3ugGtawi1WLb2vyjQAX9ZTDGU5gNk2bLdTc3iEXr6tzR1ipNP';
-        await hd4.fetchBalance();
-        if (hd4.getBalance() !== 200000) throw new Error('Could not fetch HD Bech32 balance');
-        await hd4.fetchTransactions();
-        if (hd4.getTransactions().length !== 4) throw new Error('Could not fetch HD Bech32 transactions');
+        // const hd4 = new HDSegwitBech32Wallet();
+        // hd4._xpub = 'zpub6r7jhKKm7BAVx3b3nSnuadY1WnshZYkhK8gKFoRLwK9rF3Mzv28BrGcCGA3ugGtawi1WLb2vyjQAX9ZTDGU5gNk2bLdTc3iEXr6tzR1ipNP';
+        // await hd4.fetchBalance();
+        // if (hd4.getBalance() !== 200000) throw new Error('Could not fetch HD Bech32 balance');
+        // await hd4.fetchTransactions();
+        // if (hd4.getTransactions().length !== 4) throw new Error('Could not fetch HD Bech32 transactions');
       } else {
         // skipping RN-specific test
       }

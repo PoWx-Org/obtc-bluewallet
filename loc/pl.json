@@ -332,7 +332,7 @@
     "transaction_note_saved": "Transakcja została pomyślnie zapisana."
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "Utwórz",
     "details_are_you_sure": "Jesteś pewny?",
     "import_success": "Twój portfel został pomyślnie zaimportowany.",

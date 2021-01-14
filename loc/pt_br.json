@@ -333,7 +333,7 @@
     "transactions_count": "contagem de transações"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Carteira Bitcoin simples e poderosa",
     "add_create": "Criar",
     "add_entropy_generated": "{gen} bytes de entropia gerada",
@@ -419,7 +419,7 @@
     "vault_key": "Chave do cofre {número}",
     "required_keys_out_of_total": "Chaves obrigatórias do total",
     "fee": "Taxa: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Confirmar",
     "header": "Enviar",
     "share": "Ver",

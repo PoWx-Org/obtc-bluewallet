@@ -334,7 +334,7 @@
     "transactions_count": "Nombre de transactions"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Portefeuille Bitcoin simple et puissant",
     "add_create": "Créer",
     "add_entropy_generated": "{gen} octets d'entropie générée",
@@ -421,7 +421,7 @@
     "vault_key": "Clé du coffre {number}",
     "required_keys_out_of_total": "Clés requises par rapport au total",
     "fee": "Frais: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Confirmer",
     "header": "Envoyer",
     "share": "Partager",

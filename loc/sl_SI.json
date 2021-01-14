@@ -333,7 +333,7 @@
     "transactions_count": "Število transakcij"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Preprosta in zmogljiva Bitcoin denarnica",
     "add_create": "Ustvari",
     "add_entropy_generated": "{gen} bajtov ustvarjene entropije",
@@ -419,7 +419,7 @@
     "vault_key": "Ključ trezorja {number}",
     "required_keys_out_of_total": "Zahtevani ključi od vseh",
     "fee": "Omrežnina: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Potrditev",
     "header": "Pošlji",
     "share": "Deli",

@@ -5,7 +5,7 @@ import { useTheme } from '@react-navigation/native';
 import loc from '../../loc';
 
 const ReleaseNotes = () => {
-  const notes = require('../../release-notes');
+
   const { colors } = useTheme();
   const styles = StyleSheet.create({
     root: {

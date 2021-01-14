@@ -145,7 +145,7 @@ export const BitcoinButton = props => {
       >
         <View style={{ marginHorizontal: 16, marginVertical: 10, flexDirection: 'row', alignItems: 'center' }}>
           <View>
-            <Image style={{ width: 34, height: 34, marginRight: 8 }} source={require('./img/addWallet/bitcoin.png')} />
+            <Image style={{ width: 34, height: 34, marginRight: 8 }} source={require('./img/o-btc.png')} />
           </View>
           <View>
             <Text style={{ color: colors.newBlue, fontWeight: 'bold', fontSize: 18 }}>{loc.wallets.add_bitcoin}</Text>
@@ -718,6 +718,7 @@ export const BlueListItem = React.memo(props => {
     >
       {props.leftAvatar && <Avatar>{props.leftAvatar}</Avatar>}
       {props.leftIcon && <Avatar icon={props.leftIcon} />}
+      {props.uri && <Avatar uri={props.uri} />}
       <ListItem.Content>
         <ListItem.Title
           style={{

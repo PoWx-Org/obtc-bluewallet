@@ -134,7 +134,7 @@
     "export_coordination_setup": "экспортировать настройки координатора",
     "export_signed_psbt": "Экспортировать PSBT с подписью",
     "fee": "Коммисия: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "forget_this_seed": "Забыть сид-фразу и использовать xpub вместо неё",
     "header": "Отправить",
     "how_many_signatures_can_bluewallet_make": "сколько подписей может сделать bluewallet",
@@ -395,7 +395,7 @@
     "transactions_count": "кол-во транзакций"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Простой и мощный Биткойн кошелек",
     "add_create": "Создать",
     "add_entropy_generated": "{gen} байтов сгенерированной энтории",

@@ -29,7 +29,7 @@ const About = () => {
       marginTop: 54,
     },
     logo: {
-      width: 102,
+      width: 124,
       height: 124,
     },
     textFree: {
@@ -84,20 +84,23 @@ const About = () => {
     Linking.openURL('https://twitter.com/bluewalletio');
   };
 
-  const handleOnDiscordPress = () => {
-    Linking.openURL('https://discord.gg/btWq2Aby2z');
+  const handleOnPoWxPress = () => {
+    Linking.openURL('http://powx.org/');
+  };
+  const handleOnOBTCPress = () => {
+    Linking.openURL('https://www.powx.org/obtc');
   };
 
   const handleOnTelegramPress = () => {
     Linking.openURL('https://t.me/bluewallethat');
   };
   const handleOnGithubPress = () => {
-    Linking.openURL('https://github.com/BlueWallet/BlueWallet');
+    Linking.openURL('https://github.com/Borland04/BlueWallet');
   };
   const handleOnRatePress = () => {
     const options = {
       AppleAppID: '1376878040',
-      GooglePackageName: 'io.bluewallet.bluewallet',
+      GooglePackageName: 'io.bluewallet.obtcwallet',
       preferredAndroidMarket: AndroidMarket.Google,
       preferInApp: true,
       openAppStoreIfInAppFails: true,
@@ -115,38 +118,32 @@ const About = () => {
       <ScrollView testID="AboutScrollView">
         <BlueCard>
           <View style={styles.center}>
-            <Image style={styles.logo} source={require('../../img/bluebeast.png')} />
+            <Image style={styles.logo} source={require('../../img/o-btc.png')} />
             <Text style={styles.textFree}>{loc.settings.about_free}</Text>
             <Text style={styles.textBackup}>{loc.settings.about_backup}</Text>
             <BlueButton onPress={handleOnRatePress} title={loc.settings.about_review + ' ⭐🙏'} />
           </View>
         </BlueCard>
+
         <BlueListItem
-          leftIcon={{
-            name: 'twitter',
-            type: 'font-awesome',
-            color: '#1da1f2',
-          }}
-          onPress={handleOnTwitterPress}
-          title={loc.settings.about_sm_twitter}
+          // leftIcon={{
+          //   name: 'o-btc',
+          //   type: 'font-awesome-5',
+          //   color: '#7289da',
+          // }}
+          uri="'../../img/o-btc.png'"
+          onPress={handleOnPoWxPress}
+          title="PoWx"
         />
         <BlueListItem
-          leftIcon={{
-            name: 'telegram',
-            type: 'font-awesome',
-            color: '#0088cc',
-          }}
-          onPress={handleOnTelegramPress}
-          title={loc.settings.about_sm_telegram}
-        />
-        <BlueListItem
-          leftIcon={{
-            name: 'discord',
-            type: 'font-awesome-5',
-            color: '#7289da',
-          }}
-          onPress={handleOnDiscordPress}
-          title={loc.settings.about_sm_discord}
+            // leftIcon={{
+            //   name: 'o-btc',
+            //   type: 'font-awesome-5',
+            //   color: '#7289da',
+            // }}
+            uri="'../../img/o-btc.png'"
+            onPress={handleOnOBTCPress}
+            title="OBTC"
         />
         <BlueCard>
           <View style={styles.buildWith}>
@@ -158,6 +155,7 @@ const About = () => {
             <BlueTextCentered>bitcoinjs-lib</BlueTextCentered>
             <BlueTextCentered>Nodejs</BlueTextCentered>
             <BlueTextCentered>Electrum server</BlueTextCentered>
+            <BlueTextCentered>BlueWallet</BlueTextCentered>
             <BlueSpacing20 />
 
             <TouchableOpacity onPress={handleOnGithubPress} style={styles.buttonLink}>

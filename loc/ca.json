@@ -112,7 +112,7 @@
     "confirm": "Confirmar",
     "create": "Crear",
     "create_new_key": "Crear nou",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "header": "Enviar",
     "ms_help": "Ajuda",
     "multisig_vault": "Bóveda",
@@ -262,7 +262,7 @@
     "pending": "Pendent"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "Crear",
     "add_import_wallet": "Importar moneder",
     "add_lightning": "Lightning",

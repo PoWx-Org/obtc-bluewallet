@@ -385,7 +385,7 @@
     "transactions_count": "מספר תנועות"
   },
   "wallets": {
-    "add_bitcoin": "ביטקוין",
+    "add_bitcoin": "ביטקוין אופטי",
     "add_bitcoin_explain": "ארנק ביטקוין פשוט וחזק",
     "add_create": "יצירה",
     "add_entropy_generated": "{gen} בייטים של אנתרופיה",

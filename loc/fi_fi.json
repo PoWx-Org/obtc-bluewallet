@@ -333,7 +333,7 @@
     "transactions_count": "siirtotapahtumien määrä"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Yksinkertainen ja tehokas Bitcoin-lompakko",
     "add_create": "Luo",
     "add_entropy_generated": "{gen} tavua luotua entropiaa",
@@ -419,7 +419,7 @@
     "vault_key": "Holvi avain {number}",
     "required_keys_out_of_total": "Vaaditut avaimet kokonaismäärästä",
     "fee": "Siirtokulu: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Vahvista",
     "header": "Lähetä",
     "share": "Jaa",

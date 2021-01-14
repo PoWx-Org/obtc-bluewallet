@@ -356,7 +356,7 @@
     "txid": "Txid"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Simple and powerful Bitcoin wallet",
     "add_create": "Create",
     "add_entropy_generated": "{gen} bytes of generated entropy",
@@ -452,7 +452,7 @@
     "vault_key": "Vault key {number}",
     "required_keys_out_of_total": "Required keys out of the total",
     "fee": "Fee: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Confirm",
     "header": "Send",
     "share": "Share",
@@ -537,7 +537,7 @@
     "tip": "Allows you to see, label, freeze or select coins for improved wallet management."
   },
   "units": {
-    "BTC": "BTC",
+    "BTC": "OBTC",
     "MAX": "MAX",
     "sat_byte": "sat/byte",
     "sats": "sats"

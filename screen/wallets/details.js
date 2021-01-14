@@ -216,28 +216,28 @@ const WalletDetails = () => {
       },
     });
 
-  const renderMarketplaceButton = () => {
-    return Platform.select({
-      android: (
-        <SecondButton
-          onPress={() =>
-            navigate('Marketplace', {
-              fromWallet: wallet,
-            })
-          }
-          title={loc.wallets.details_marketplace}
-        />
-      ),
-      ios: (
-        <SecondButton
-          onPress={async () => {
-            Linking.openURL('https://bluewallet.io/marketplace-btc/');
-          }}
-          title={loc.wallets.details_marketplace}
-        />
-      ),
-    });
-  };
+  // const renderMarketplaceButton = () => {
+  //   return Platform.select({
+  //     android: (
+  //       <SecondButton
+  //         onPress={() =>
+  //           navigate('Marketplace', {
+  //             fromWallet: wallet,
+  //           })
+  //         }
+  //         title={loc.wallets.details_marketplace}
+  //       />
+  //     ),
+  //     ios: (
+  //       <SecondButton
+  //         onPress={async () => {
+  //           Linking.openURL('https://bluewallet.io/marketplace-btc/');
+  //         }}
+  //         title={loc.wallets.details_marketplace}
+  //       />
+  //     ),
+  //   });
+  // };
 
   const exportInternals = async () => {
     if (backdoorPressed < 10) return setBackdoorPressed(backdoorPressed + 1);
@@ -335,9 +335,9 @@ const WalletDetails = () => {
     navigate('Broadcast');
   };
 
-  const navigateToIsItMyAddress = () => {
-    navigate('IsItMyAddress');
-  };
+  // const navigateToIsItMyAddress = () => {
+  //   navigate('IsItMyAddress');
+  // };
 
   const walletNameTextInputOnBlur = () => {
     if (walletName.trim().length === 0) {
@@ -511,25 +511,27 @@ const WalletDetails = () => {
               {(wallet.type === HDLegacyBreadwalletWallet.type ||
                 wallet.type === HDLegacyP2PKHWallet.type ||
                 wallet.type === HDSegwitBech32Wallet.type ||
-                wallet.type === HDSegwitP2SHWallet.type) && (
-                <>
-                  <SecondButton onPress={navigateToXPub} title={loc.wallets.details_show_xpub} />
-
-                  <BlueSpacing20 />
-                  {renderMarketplaceButton()}
-                </>
-              )}
+                wallet.type === HDSegwitP2SHWallet.type)
+              // && (
+              //   <>
+              //     <SecondButton onPress={navigateToXPub} title={loc.wallets.details_show_xpub} />
+              //
+              //     <BlueSpacing20 />
+              //     {/*{renderMarketplaceButton()}*/}
+              //   </>
+              // )
+              }
               {wallet.type !== LightningCustodianWallet.type && (
                 <>
                   <BlueSpacing20 />
                   <SecondButton onPress={navigateToBroadcast} title={loc.settings.network_broadcast} />
                 </>
               )}
-              <>
-                <BlueSpacing20 />
-                <SecondButton onPress={navigateToIsItMyAddress} title={loc.is_it_my_address.title} />
-              </>
-              <BlueSpacing20 />
+              {/*<>*/}
+              {/*  <BlueSpacing20 />*/}
+              {/*  <SecondButton onPress={navigateToIsItMyAddress} title={loc.is_it_my_address.title} />*/}
+              {/*</>*/}
+              {/*<BlueSpacing20 />*/}
               <BlueSpacing20 />
               <TouchableOpacity onPress={handleDeleteButtonTapped}>
                 <Text textBreakStrategy="simple" style={styles.delete}>{`${loc.wallets.details_delete}${'  '}`}</Text>

@@ -129,7 +129,7 @@
     "create_new_key": "新規作成",
     "export_coordination_setup": "エクスポート調整設定",
     "fee": "費用: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "forget_this_seed": "このシードではなくxpubを代わりに利用する",
     "header": "送る",
     "how_many_signatures_can_bluewallet_make": "Bluewalletが何人分の署名を作ることができるか",
@@ -360,7 +360,7 @@
     "transactions_count": "トランザクションカウント"
   },
   "wallets": {
-    "add_bitcoin": "ビットコイン",
+    "add_bitcoin": "光ビットコイン",
     "add_bitcoin_explain": "シンプルかつパワフルなBitcoinウォレット",
     "add_create": "作成",
     "add_entropy_generated": "生成されたエントロピーの {gen} バイト",

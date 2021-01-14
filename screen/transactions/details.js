@@ -129,7 +129,7 @@ const TransactionsDetails = () => {
   };
 
   const handleOnOpenTransactionOnBlockExporerTapped = () => {
-    const url = `https://blockstream.info/tx/${tx.hash}`;
+    const url = `http://explorer.powx.org/tx/${tx.hash}`;
     Linking.canOpenURL(url).then(supported => {
       if (supported) {
         Linking.openURL(url);
@@ -144,7 +144,7 @@ const TransactionsDetails = () => {
   return (
     <SafeBlueArea forceInset={{ horizontal: 'always' }} style={styles.root}>
       {isHandOffUseEnabled && (
-        <Handoff title={`Bitcoin Transaction ${tx.hash}`} type="io.bluewallet.bluewallet" url={`https://blockstream.info/tx/${tx.hash}`} />
+        <Handoff title={`Bitcoin Transaction ${tx.hash}`} type="io.bluewallet.obtcwallet" url={`http://explorer.powx.org/tx/${tx.hash}`} />
       )}
       <StatusBar barStyle="default" />
       <ScrollView style={styles.scroll}>

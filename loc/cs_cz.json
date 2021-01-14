@@ -348,7 +348,7 @@
     "txid": "Txid"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Jednoduchá a výkonná bitcoinová peněženka",
     "add_create": "Vytvořit",
     "add_entropy_generated": "{gen} bajtů generované entropie",
@@ -444,7 +444,7 @@
     "vault_key": "Klíč úložiště {number}",
     "required_keys_out_of_total": "Požadované klíče z celkového počtu",
     "fee": "Poplatek: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Potvrdit",
     "header": "Odeslat",
     "share": "Sdílet",
@@ -527,7 +527,7 @@
     "tip": "Umožňuje zobrazit, označit, zmrazit nebo vybrat mince pro lepší správu peněženky."
   },
   "units": {
-    "BTC": "BTC",
+    "BTC": "OBTC",
     "MAX": "MAX",
     "sat_byte": "sat/byte",
     "sats": "sats"

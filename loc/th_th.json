@@ -268,7 +268,7 @@
     "transactions_count": "จำนวนธุรกรรม"
   },
   "wallets": {
-    "add_bitcoin": "บิตคอยน์",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "สร้าง",
     "add_import_wallet": "นำเข้ากระเป๋าสตางค์",
     "add_lightning": "ไลท์นิง",

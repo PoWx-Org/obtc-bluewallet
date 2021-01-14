@@ -356,7 +356,7 @@
     "txid": "TX-ID"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Einfache und leistungsstarke Bitcoin Wallet",
     "add_create": "Erstellen",
     "add_entropy_generated": "{gen} Bytes an generierter Entropie ",
@@ -452,7 +452,7 @@
     "vault_key": "Tresor-Schlüssel: {number}",
     "required_keys_out_of_total": "Erforderliche Schlüssel aus dem Total",
     "fee": "Gebhür: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Bestätigen",
     "header": "Senden",
     "share": "Teilen",
@@ -535,7 +535,7 @@
     "tip": "Wallet-Verwaltung zum Anzeigen, Beschriften, Einfrieren oder Auswählen von Münzen."
   },
   "units": {
-    "BTC": "BTC",
+    "BTC": "OBTC",
     "MAX": "MAX",
     "sat_byte": "sat/byte",
     "sats": "sats"

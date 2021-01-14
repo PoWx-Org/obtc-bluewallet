@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package io.bluewallet.obtcwallet;
 
 import com.wix.detox.Detox;
 

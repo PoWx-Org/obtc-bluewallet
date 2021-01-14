@@ -112,7 +112,7 @@
     "confirm": "Confirmar",
     "export_coordination_setup": "exportacion de coordinacion",
     "fee": "Tarifa: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "header": "Enviar",
     "how_many_signatures_can_bluewallet_make": "Cuántas firmas puede hacer bluewallet",
     "provide_signature": "Proporcionar firma",
@@ -317,7 +317,7 @@
     "transactions_count": "Número de transacciones"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "Crear",
     "add_entropy_generated": "{gen} bytes de entropía generada",
     "add_entropy_provide": "Entropía mediante el lanzamiento de dados",

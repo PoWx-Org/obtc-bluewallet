@@ -301,7 +301,7 @@
     "transactions_count": "contagem de transações"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "Adicionar",
     "add_entropy_generated": "{gen} bytes de entropia gerada",
     "add_entropy_provide": "Entropia através de dados",

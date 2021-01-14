@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package io.bluewallet.obtcwallet;
 
 import android.app.Application;
 import android.content.Context;

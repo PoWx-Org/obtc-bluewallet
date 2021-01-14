@@ -341,7 +341,7 @@ const ReceiveDetails = () => {
       {isHandOffUseEnabled && address !== undefined && showAddress && (
         <Handoff
           title={`Bitcoin Transaction ${address}`}
-          type="io.bluewallet.bluewallet"
+          type="io.bluewallet.obtcwallet"
           url={`https://blockstream.info/address/${address}`}
         />
       )}

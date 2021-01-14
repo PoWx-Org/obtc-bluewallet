@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="io.bluewallet.bluewallet">
+  package="io.bluewallet.obtcwallet">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
     <application
-      android:name=".MainApplication"
+      android:name="io.bluewallet.obtcwallet.MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
@@ -18,7 +18,7 @@
       android:theme="@style/AppTheme">
 
         <meta-data  android:name="com.dieam.reactnativepushnotification.notification_channel_name"
-                    android:value="BlueWallet notifications"/> <!-- YOUR NOTIFICATION CHANNEL NAME -->
+                    android:value="OBTC Wallet notifications"/> <!-- YOUR NOTIFICATION CHANNEL NAME -->
         <meta-data  android:name="com.dieam.reactnativepushnotification.notification_channel_description"
                     android:value="Notifications about incoming payments"/> <!-- YOUR NOTIFICATION CHANNEL DESCRIPTION -->
 
@@ -49,7 +49,7 @@
         </service>
 
       <activity
-        android:name=".MainActivity"
+        android:name="io.bluewallet.obtcwallet.MainActivity"
         android:label="@string/app_name"
         android:launchMode="singleInstance"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
@@ -64,9 +64,9 @@
           <category android:name="android.intent.category.BROWSABLE" />
           <data android:scheme="bitcoin" />
           <data android:scheme="lightning" />
-          <data android:scheme="bluewallet" />
+          <data android:scheme="obtcwallet" />
           <data android:scheme="lapp" />
-          <data android:scheme="blue" />
+          <data android:scheme="obtc" />
         </intent-filter>
         <intent-filter>
   <action android:name="android.intent.action.VIEW" />

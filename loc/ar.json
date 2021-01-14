@@ -291,7 +291,7 @@
     "transactions_count": "عدد المعاملات"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_create": "الإنشاء",
     "add_entropy_generated": "{gen} بايت من الإنتروبيا (العشوائية) المحققة",
     "add_entropy_provide": "توفير الإنتروبيا (العشوائية) باستخدام النرد",

@@ -1,10 +1,7 @@
-package io.bluewallet.bluewallet;
+package io.bluewallet.obtcwallet;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-
-import androidx.annotation.Nullable;
 
 import com.facebook.react.ReactActivity;
 
@@ -16,7 +13,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "BlueWallet";
+        return "OBTCWallet";
     }
 
     @Override

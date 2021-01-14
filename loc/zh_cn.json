@@ -144,7 +144,7 @@
     "list_title": "转账"
   },
   "wallets": {
-    "add_bitcoin": "比特币",
+    "add_bitcoin": "光学比特币",
     "add_create": "创建",
     "add_import_wallet": "导入钱包",
     "add_lightning": "闪电",

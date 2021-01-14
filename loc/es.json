@@ -142,7 +142,7 @@
     "export_coordination_setup": "exportar coordinacion",
     "export_signed_psbt": "Exportar PSBT firmado",
     "fee": "Tarifa: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "forget_this_seed": "Olvida esta semilla y usa XPUB",
     "header": "Enviar",
     "how_many_signatures_can_bluewallet_make": "Cuántas firmas puede hacer bluewallet",
@@ -417,7 +417,7 @@
     "transactions_count": "Número de transacciones"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Una cartera de Bitcoin útil y facil de usar",
     "add_create": "Crear",
     "add_entropy_generated": "{gen} bytes de entropía generada",

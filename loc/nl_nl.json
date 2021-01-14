@@ -334,7 +334,7 @@
     "transactions_count": "Transactieteller"
   },
   "wallets": {
-    "add_bitcoin": "Bitcoin",
+    "add_bitcoin": "Optical Bitcoin",
     "add_bitcoin_explain": "Eenvoudige en krachtige Bitcoin-wallet",
     "add_create": "Aanmaken",
     "add_entropy_generated": "{gen} bytes gegenereerde entropie",
@@ -421,7 +421,7 @@
     "vault_key": "Vault key {number}",
     "required_keys_out_of_total": "Vereiste keys uit het totaal",
     "fee": "Fee: {number}",
-    "fee_btc": "{number} BTC",
+    "fee_btc": "{number} OBTC",
     "confirm": "Bevestig",
     "header": "Verzenden",
     "share": "Delen",
