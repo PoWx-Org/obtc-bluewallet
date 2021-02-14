@@ -419,7 +419,7 @@
     "vault_key": "Holvi avain {number}",
     "required_keys_out_of_total": "Vaaditut avaimet kokonaismäärästä",
     "fee": "Siirtokulu: {number}",
-    "fee_btc": "{number} OBTC",
+    "fee_btc": "{number} oBTC",
     "confirm": "Vahvista",
     "header": "Lähetä",
     "share": "Jaa",

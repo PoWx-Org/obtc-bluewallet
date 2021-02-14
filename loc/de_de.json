@@ -452,7 +452,7 @@
     "vault_key": "Tresor-Schlüssel: {number}",
     "required_keys_out_of_total": "Erforderliche Schlüssel aus dem Total",
     "fee": "Gebhür: {number}",
-    "fee_btc": "{number} OBTC",
+    "fee_btc": "{number} oBTC",
     "confirm": "Bestätigen",
     "header": "Senden",
     "share": "Teilen",
@@ -535,7 +535,7 @@
     "tip": "Wallet-Verwaltung zum Anzeigen, Beschriften, Einfrieren oder Auswählen von Münzen."
   },
   "units": {
-    "BTC": "OBTC",
+    "BTC": "oBTC",
     "MAX": "MAX",
     "sat_byte": "sat/byte",
     "sats": "sats"

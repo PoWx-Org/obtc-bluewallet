@@ -112,7 +112,7 @@
     "confirm": "Confirmar",
     "export_coordination_setup": "exportacion de coordinacion",
     "fee": "Tarifa: {number}",
-    "fee_btc": "{number} OBTC",
+    "fee_btc": "{number} oBTC",
     "header": "Enviar",
     "how_many_signatures_can_bluewallet_make": "Cuántas firmas puede hacer bluewallet",
     "provide_signature": "Proporcionar firma",

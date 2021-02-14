@@ -142,7 +142,7 @@
     "export_coordination_setup": "exportar coordinacion",
     "export_signed_psbt": "Exportar PSBT firmado",
     "fee": "Tarifa: {number}",
-    "fee_btc": "{number} OBTC",
+    "fee_btc": "{number} oBTC",
     "forget_this_seed": "Olvida esta semilla y usa XPUB",
     "header": "Enviar",
     "how_many_signatures_can_bluewallet_make": "Cuántas firmas puede hacer bluewallet",
