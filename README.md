@@ -1,9 +1,10 @@
 # oBTC Wallet - A Optical Bitcoin Wallet
 
-Thin Optical Bitcoin Wallet.
-Based on [bluewallet.io](http://bluewallet.io).
+An Optical Bitcoin (oBTC) wallet that allows you to store, send oBTC, receive oBTC with focus on security and simplicity.
 
-Play Store comming soon...
+oBTC is an experimental currency based on Bitcoin. The aim is to reduce the environmental impact of mining using low-energy miners. See more on https://powx.org.
+
+Soon on Google Play.
 
 * Private keys never leave your device
 * SegWit-first. Replace-By-Fee support
