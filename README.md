@@ -9,9 +9,6 @@ Play Store comming soon...
 * SegWit-first. Replace-By-Fee support
 * Encryption. Plausible deniability
 
-<img src="https://i.imgur.com/hHYJnMj.png" width="100%">
-
-
 ## BUILD & RUN IT
 
 Please refer to the engines field in package.json file for the minimum required versions of Node and npm. It is preferred that you use an even-numbered version of Node as these are LTS versions.
