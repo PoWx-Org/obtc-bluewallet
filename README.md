@@ -84,5 +84,5 @@ MIT
 ## RESPONSIBLE DISCLOSURE
 
 The code is based on [bluewallet.io](https://bluewallet.io).
-Found critical bugs/vulnerabilities? Please use [Issues](https://github.com/PoWx-Org/obtc-bluewallet/issues)
+Found critical bugs/vulnerabilities? Please submit an [issue](https://github.com/PoWx-Org/obtc-bluewallet/issues).
 Thanks!
