@@ -1,27 +1,13 @@
-# BlueWallet - A Bitcoin & Lightning Wallet
+# oBTC Wallet - A Optical Bitcoin Wallet
 
-[![GitHub tag](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/BlueWallet/BlueWallet/master/package.json&query=$.version&label=Version)](https://github.com/BlueWallet/BlueWallet)
-[![CircleCI](https://circleci.com/gh/BlueWallet/BlueWallet.svg?style=svg)](https://circleci.com/gh/BlueWallet/BlueWallet)
-[![e2e on master](https://travis-ci.com/BlueWallet/BlueWallet.svg?branch=master)](https://travis-ci.com/BlueWallet/BlueWallet)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-![](https://img.shields.io/github/license/BlueWallet/BlueWallet.svg)
+Thin Optical Bitcoin Wallet.
+Based on [bluewallet.io](http://bluewallet.io).
 
-Thin Bitcoin Wallet.
-Built with React Native and Electrum.
-
-[![Appstore](https://bluewallet.io/img/app-store-badge.svg)](https://itunes.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040?l=ru&ls=1&mt=8)
-[![Playstore](https://bluewallet.io/img/play-store-badge.svg)](https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet)
-
-Website: [bluewallet.io](http://bluewallet.io)
-
-Community: [telegram group](https://t.me/bluewallet)
+Play Store comming soon...
 
 * Private keys never leave your device
-* Lightning Network supported
 * SegWit-first. Replace-By-Fee support
 * Encryption. Plausible deniability
-* And many more [features...](https://bluewallet.io/features)
-
 
 <img src="https://i.imgur.com/hHYJnMj.png" width="100%">
 
@@ -93,37 +79,11 @@ Once the patches are applied, open Xcode and select "My Mac" as destination. If 
 npm run test
 ```
 
-
-## MOTIVATION TO BUILD IT
-
-I was not satisfied with existing iOS Bitcoin apps, especially with BreadWallet (the one I mainly used) where development stalled and they could not even deliver such features as SegWit, RBF and custom fees (at the times where custom fees were especially needed).
-So I knew I could create one to use myself and let others use it.
-I had experience with awesome bitcoin-js lib (javascript), and since I dont own any Macs, don't plan to and not going to learn ObjC/Swift - ReactNative (where you also write in javascript) was an obvious choice.
-
-
 ## LICENSE
 
 MIT
 
-## WANT TO CONTRIBUTE?
-
-Grab an issue from [the backlog](https://github.com/BlueWallet/BlueWallet/projects/1), try to start or submit a PR, any doubts we will try to guide you. Contributors have a private telegram group, request access by email bluewallet@bluewallet.io
-
-## Translations
-
-We accepts translations via [Transifex](https://www.transifex.com/bluewallet/bluewallet/)
-
-To participate you need to:
-1. Sign up to Transifex
-2. Find BlueWallet project
-3. Send join request
-4. After we accept your request you will be able to start translating! That's it!
-
-Please note the values in curly braces should not be translated. These are the names of the variables that will be inserted into the translated string. For example, the original string `"{number} of {total}"` in Russian will be `"{number} из {total}"`.
-
-Transifex automatically creates Pull Request when language reaches 100% translation. We also trigger this by hand before each release, so don't worry if you can't translate everything, every word counts.
-
 ## RESPONSIBLE DISCLOSURE
 
-Found critical bugs/vulnerabilities? Please email them bluewallet@bluewallet.io
+Found critical bugs/vulnerabilities? Please use [Issues](https://github.com/PoWx-Org/obtc-bluewallet/issues)
 Thanks!
