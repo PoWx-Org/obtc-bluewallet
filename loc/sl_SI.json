@@ -419,7 +419,7 @@
     "vault_key": "Ključ trezorja {number}",
     "required_keys_out_of_total": "Zahtevani ključi od vseh",
     "fee": "Omrežnina: {number}",
-    "fee_btc": "{number} OBTC",
+    "fee_btc": "{number} oBTC",
     "confirm": "Potrditev",
     "header": "Pošlji",
     "share": "Deli",

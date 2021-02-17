@@ -143,7 +143,7 @@ const About = () => {
             // }}
             uri="'../../img/o-btc.png'"
             onPress={handleOnOBTCPress}
-            title="OBTC"
+            title="oBTC"
         />
         <BlueCard>
           <View style={styles.buildWith}>
