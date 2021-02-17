@@ -1,4 +1,4 @@
-# oBTC Wallet - A Optical Bitcoin Wallet
+# oBTC Wallet
 
 An Optical Bitcoin (oBTC) wallet that allows you to store, send oBTC, receive oBTC with focus on security and simplicity.
 
