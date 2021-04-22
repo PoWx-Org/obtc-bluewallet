@@ -84,9 +84,9 @@ export default class LnurlPay extends Component {
       case BitcoinUnit.BTC:
         amountSats = currency.btcToSatoshi(amountSats);
         break;
-      case BitcoinUnit.LOCAL_CURRENCY:
-        amountSats = currency.btcToSatoshi(currency.fiatToBTC(amountSats));
-        break;
+      // case BitcoinUnit.LOCAL_CURRENCY:
+      //   amountSats = currency.btcToSatoshi(currency.fiatToBTC(amountSats));
+      //   break;
     }
 
     /** @type {LightningCustodianWallet} */

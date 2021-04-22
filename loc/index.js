@@ -248,7 +248,8 @@ export function formatBalance(balance, toUnit, withFormatting = false) {
       ' ' +
       strings.units[BitcoinUnit.SATS]
     );
-  } else if (toUnit === BitcoinUnit.LOCAL_CURRENCY) {
+  }
+  else if (toUnit === BitcoinUnit.LOCAL_CURRENCY) {
     return currency.satoshiToLocalCurrency(balance);
   }
 }
