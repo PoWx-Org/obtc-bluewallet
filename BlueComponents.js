@@ -40,7 +40,7 @@ import QRCode from 'react-native-qrcode-svg';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation, useTheme } from '@react-navigation/native';
 import { BlueCurrentTheme } from './components/themes';
-import loc, { formatBalance, formatBalanceWithoutSuffix, formatBalancePlain, removeTrailingZeros, transactionTimeToReadable } from './loc';
+import loc, { formatBalance, formatBalanceWithoutSuffix, formatBalancePlain, transactionTimeToReadable } from './loc';
 import Lnurl from './class/lnurl';
 import { BlueStorageContext } from './blue_modules/storage-context';
 /** @type {AppStorage} */
@@ -1981,13 +1981,13 @@ export class BlueBitcoinAmount extends Component {
   render() {
     const amount = this.props.amount || 0;
     // let secondaryDisplayCurrency = formatBalanceWithoutSuffix(amount, BitcoinUnit.LOCAL_CURRENCY, false);
-      let secondaryDisplayCurrency = ''
+    //   let secondaryDisplayCurrency = ''
     // if main display is sat or btc - secondary display is fiat
     // if main display is fiat - secondary dislay is btc
-    let sat;
+    // let sat;
     switch (this.state.unit) {
       case BitcoinUnit.BTC:
-        sat = new BigNumber(amount).multipliedBy(100000000).toString();
+        // sat = new BigNumber(amount).multipliedBy(100000000).toString();
         // secondaryDisplayCurrency = formatBalanceWithoutSuffix(sat, BitcoinUnit.LOCAL_CURRENCY, false);
         break;
       case BitcoinUnit.SATS:
@@ -2108,14 +2108,17 @@ export class BlueBitcoinAmount extends Component {
                 </Text>
               )}
             </View>
-            <View style={{ alignItems: 'center', marginBottom: 22 }}>
-              <Text style={{ fontSize: 16, color: '#9BA0A9', fontWeight: '600' }}>
-                {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX
-                  ? removeTrailingZeros(secondaryDisplayCurrency)
-                  : secondaryDisplayCurrency}
-                {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX ? ` ${loc.units[BitcoinUnit.BTC]}` : null}
-              </Text>
-            </View>
+            {
+                /* <View style={{ alignItems: 'center', marginBottom: 22 }}> */}
+            {/*  <Text style={{ fontSize: 16, color: '#9BA0A9', fontWeight: '600' }}> */}
+            {/*    {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX */}
+            {/*
+                 ? removeTrailingZeros(secondaryDisplayCurrency) */}
+            {/*      : secondaryDisplayCurrency} */}
+            {/*    {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX ? ` ${loc.units[BitcoinUnit.BTC]}` : null} */}
+            {/*  </Text> */}
+            {
+                /* </View> */}
           </View>
           {!this.props.disabled && amount !== BitcoinUnit.MAX && (
             <TouchableOpacity

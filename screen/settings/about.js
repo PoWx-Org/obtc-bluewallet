@@ -80,9 +80,9 @@ const About = () => {
     navigate('Licensing');
   };
 
-  const handleOnTwitterPress = () => {
-    Linking.openURL('https://twitter.com/bluewalletio');
-  };
+  // const handleOnTwitterPress = () => {
+  //   Linking.openURL('https://twitter.com/bluewalletio');
+  // };
 
   const handleOnPoWxPress = () => {
     Linking.openURL('http://powx.org/');
@@ -91,9 +91,9 @@ const About = () => {
     Linking.openURL('https://www.powx.org/obtc');
   };
 
-  const handleOnTelegramPress = () => {
-    Linking.openURL('https://t.me/bluewallethat');
-  };
+  // const handleOnTelegramPress = () => {
+  //   Linking.openURL('https://t.me/bluewallethat');
+  // };
   const handleOnGithubPress = () => {
     Linking.openURL('https://github.com/Borland04/BlueWallet');
   };

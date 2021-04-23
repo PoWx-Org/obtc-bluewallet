@@ -231,29 +231,29 @@ const WalletsList = () => {
     );
   };
 
-  const renderLocalTrader = () => {
-    if (carouselData.every(wallet => wallet === false)) return null;
-    if (carouselData.length > 0 && !carouselData.some(wallet => wallet.type === PlaceholderWallet.type)) {
-      return (
-        <TouchableOpacity
-          onPress={() => {
-            navigate('HodlHodl', { screen: 'HodlHodl' });
-          }}
-          style={[styles.ltRoot, stylesHook.ltRoot]}
-        >
-          <View style={styles.ltTextWrap}>
-            <Text style={[styles.ltTextBig, stylesHook.ltTextBig]}>{loc.hodl.local_trader}</Text>
-            <Text style={[styles.ltTextSmall, stylesHook.ltTextSmall]}>{loc.hodl.p2p}</Text>
-          </View>
-          <View style={styles.ltButtonWrap}>
-            <Text style={styles.ltButton}>{loc.hodl.local_trader_new}</Text>
-          </View>
-        </TouchableOpacity>
-      );
-    } else {
-      return null;
-    }
-  };
+  // const renderLocalTrader = () => {
+  //   if (carouselData.every(wallet => wallet === false)) return null;
+  //   if (carouselData.length > 0 && !carouselData.some(wallet => wallet.type === PlaceholderWallet.type)) {
+  //     return (
+  //       <TouchableOpacity
+  //         onPress={() => {
+  //           navigate('HodlHodl', { screen: 'HodlHodl' });
+  //         }}
+  //         style={[styles.ltRoot, stylesHook.ltRoot]}
+  //       >
+  //         <View style={styles.ltTextWrap}>
+  //           <Text style={[styles.ltTextBig, stylesHook.ltTextBig]}>{loc.hodl.local_trader}</Text>
+  //           <Text style={[styles.ltTextSmall, stylesHook.ltTextSmall]}>{loc.hodl.p2p}</Text>
+  //         </View>
+  //         <View style={styles.ltButtonWrap}>
+  //           <Text style={styles.ltButton}>{loc.hodl.local_trader_new}</Text>
+  //         </View>
+  //       </TouchableOpacity>
+  //     );
+  //   } else {
+  //     return null;
+  //   }
+  // };
 
   const renderWalletsCarousel = () => {
     return (

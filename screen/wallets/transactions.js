@@ -250,10 +250,10 @@ const WalletTransactions = () => {
             The idea is to avoid showing on iOS an appstore/market style app that goes against the TOS.
 
            */}
-          {/*{wallet.current.getTransactions().length > 0 && wallet.current.type !== LightningCustodianWallet.type && renderSellFiat()}*/}
+          {/* {wallet.current.getTransactions().length > 0 && wallet.current.type !== LightningCustodianWallet.type && renderSellFiat()} */}
           {wallet.current.getTransactions().length > 0 && wallet.current.type !== LightningCustodianWallet.type}
-          {/*{wallet.current.type === LightningCustodianWallet.type && renderMarketplaceButton()}*/}
-          {/*{wallet.current.type === LightningCustodianWallet.type && Platform.OS === 'ios' && renderLappBrowserButton()}*/}
+          {/* {wallet.current.type === LightningCustodianWallet.type && renderMarketplaceButton()} */}
+          {/* {wallet.current.type === LightningCustodianWallet.type && Platform.OS === 'ios' && renderLappBrowserButton()} */}
         </View>
         <View style={[styles.listHeaderTextRow, stylesHook.listHeaderTextRow]}>
           <Text style={[styles.listHeaderText, stylesHook.listHeaderText]}>{loc.transactions.list_title}</Text>
@@ -305,25 +305,25 @@ const WalletTransactions = () => {
               title={loc.lnd.refill_external}
             />
 
-            {/*<BlueListItem*/}
-            {/*  hideChevron*/}
-            {/*  component={TouchableOpacity}*/}
-            {/*  onPress={() => {*/}
-            {/*    setIsManageFundsModalVisible(false);*/}
-            {/*    setTimeout(() => navigateToBuyBitcoin(), 500);*/}
-            {/*  }}*/}
-            {/*  title={loc.lnd.refill_card}*/}
-            {/*/>*/}
+            {/* <BlueListItem */}
+            {/*  hideChevron */}
+            {/*  component={TouchableOpacity} */}
+            {/*  onPress={() => { */}
+            {/*    setIsManageFundsModalVisible(false); */}
+            {/*    setTimeout(() => navigateToBuyBitcoin(), 500); */}
+            {/*  }} */}
+            {/*  title={loc.lnd.refill_card} */}
+            {/* /> */}
 
-            {/*<BlueListItem*/}
-            {/*  title={loc.lnd.exchange}*/}
-            {/*  hideChevron*/}
-            {/*  component={TouchableOpacity}*/}
-            {/*  onPress={() => {*/}
-            {/*    setIsManageFundsModalVisible(false);*/}
-            {/*    Linking.openURL('https://zigzag.io/?utm_source=integration&utm_medium=bluewallet&utm_campaign=withdrawLink');*/}
-            {/*  }}*/}
-            {/*/>*/}
+            {/* <BlueListItem */}
+            {/*  title={loc.lnd.exchange} */}
+            {/*  hideChevron */}
+            {/*  component={TouchableOpacity} */}
+            {/*  onPress={() => { */}
+            {/*    setIsManageFundsModalVisible(false); */}
+            {/*    Linking.openURL('https://zigzag.io/?utm_source=integration&utm_medium=bluewallet&utm_campaign=withdrawLink'); */}
+            {/*  }} */}
+            {/* /> */}
           </View>
         </KeyboardAvoidingView>
       </BottomModal>
@@ -654,13 +654,13 @@ const WalletTransactions = () => {
               </Text>
               {isLightning() && <Text style={styles.emptyTxsLightning}>{loc.wallets.list_empty_txs2_lightning}</Text>}
 
-              {/*{!isLightning() && (*/}
-              {/*  <TouchableOpacity onPress={navigateToBuyBitcoin} style={styles.buyBitcoin}>*/}
-              {/*    <Text testID="NoTxBuyBitcoin" style={styles.buyBitcoinText}>*/}
-              {/*      {loc.wallets.list_tap_here_to_buy}*/}
-              {/*    </Text>*/}
-              {/*  </TouchableOpacity>*/}
-              {/*)}*/}
+              {/* {!isLightning() && ( */}
+              {/*  <TouchableOpacity onPress={navigateToBuyBitcoin} style={styles.buyBitcoin}> */}
+              {/*    <Text testID="NoTxBuyBitcoin" style={styles.buyBitcoinText}> */}
+              {/*      {loc.wallets.list_tap_here_to_buy} */}
+              {/*    </Text> */}
+              {/*  </TouchableOpacity> */}
+              {/* )} */}
             </ScrollView>
           }
           onRefresh={refreshTransactions}

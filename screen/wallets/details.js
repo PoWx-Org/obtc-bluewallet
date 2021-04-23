@@ -208,13 +208,13 @@ const WalletDetails = () => {
       },
     });
   };
-  const navigateToXPub = () =>
-    navigate('WalletXpubRoot', {
-      screen: 'WalletXpub',
-      params: {
-        secret: wallet.getSecret(),
-      },
-    });
+  // const navigateToXPub = () =>
+  //   navigate('WalletXpubRoot', {
+  //     screen: 'WalletXpub',
+  //     params: {
+  //       secret: wallet.getSecret(),
+  //     },
+  //   });
 
   // const renderMarketplaceButton = () => {
   //   return Platform.select({
@@ -527,11 +527,11 @@ const WalletDetails = () => {
                   <SecondButton onPress={navigateToBroadcast} title={loc.settings.network_broadcast} />
                 </>
               )}
-              {/*<>*/}
-              {/*  <BlueSpacing20 />*/}
-              {/*  <SecondButton onPress={navigateToIsItMyAddress} title={loc.is_it_my_address.title} />*/}
-              {/*</>*/}
-              {/*<BlueSpacing20 />*/}
+              {/* <> */}
+              {/*  <BlueSpacing20 /> */}
+              {/*  <SecondButton onPress={navigateToIsItMyAddress} title={loc.is_it_my_address.title} /> */}
+              {/* </> */}
+              {/* <BlueSpacing20 /> */}
               <BlueSpacing20 />
               <TouchableOpacity onPress={handleDeleteButtonTapped}>
                 <Text textBreakStrategy="simple" style={styles.delete}>{`${loc.wallets.details_delete}${'  '}`}</Text>

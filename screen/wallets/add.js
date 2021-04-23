@@ -200,20 +200,20 @@ const WalletsAdd = () => {
     navigate('ImportWallet');
   };
 
-  const handleOnVaultButtonPressed = () => {
-    Keyboard.dismiss();
-    setSelectedWalletType(ButtonSelected.VAULT);
-  };
+  // const handleOnVaultButtonPressed = () => {
+  //   Keyboard.dismiss();
+  //   setSelectedWalletType(ButtonSelected.VAULT);
+  // };
 
   const handleOnBitcoinButtonPressed = () => {
     Keyboard.dismiss();
     setSelectedWalletType(ButtonSelected.ONCHAIN);
   };
 
-  const handleOnLightningButtonPressed = () => {
-    Keyboard.dismiss();
-    setSelectedWalletType(ButtonSelected.OFFCHAIN);
-  };
+  // const handleOnLightningButtonPressed = () => {
+  //   Keyboard.dismiss();
+  //   setSelectedWalletType(ButtonSelected.OFFCHAIN);
+  // };
 
   return (
     <ScrollView style={stylesHook.root}>
@@ -241,12 +241,12 @@ const WalletsAdd = () => {
             onPress={handleOnBitcoinButtonPressed}
             style={styles.button}
           />
-          {/*<LightningButton*/}
-          {/*  active={selectedWalletType === ButtonSelected.OFFCHAIN}*/}
-          {/*  onPress={handleOnLightningButtonPressed}*/}
-          {/*  style={styles.button}*/}
-          {/*/>*/}
-          {/*<VaultButton active={selectedWalletType === ButtonSelected.VAULT} onPress={handleOnVaultButtonPressed} style={styles.button} />*/}
+          {/* <LightningButton */}
+          {/*  active={selectedWalletType === ButtonSelected.OFFCHAIN} */}
+          {/*  onPress={handleOnLightningButtonPressed} */}
+          {/*  style={styles.button} */}
+          {/* /> */}
+          {/* <VaultButton active={selectedWalletType === ButtonSelected.VAULT} onPress={handleOnVaultButtonPressed} style={styles.button} /> */}
         </View>
 
         <View style={styles.advanced}>
