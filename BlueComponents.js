@@ -317,12 +317,14 @@ export class BlueWalletNavigationHeader extends Component {
       wallet.preferredBalanceUnit = BitcoinUnit.SATS;
       walletPreviousPreferredUnit = BitcoinUnit.BTC;
     } else if (walletPreviousPreferredUnit === BitcoinUnit.SATS) {
-      wallet.preferredBalanceUnit = BitcoinUnit.LOCAL_CURRENCY;
-      walletPreviousPreferredUnit = BitcoinUnit.SATS;
-    } else if (walletPreviousPreferredUnit === BitcoinUnit.LOCAL_CURRENCY) {
       wallet.preferredBalanceUnit = BitcoinUnit.BTC;
-      walletPreviousPreferredUnit = BitcoinUnit.BTC;
-    } else {
+      walletPreviousPreferredUnit = BitcoinUnit.SATS;
+    }
+    // else if (walletPreviousPreferredUnit === BitcoinUnit.LOCAL_CURRENCY) {
+    //   wallet.preferredBalanceUnit = BitcoinUnit.BTC;
+    //   walletPreviousPreferredUnit = BitcoinUnit.BTC;
+    // }
+    else {
       wallet.preferredBalanceUnit = BitcoinUnit.BTC;
       walletPreviousPreferredUnit = BitcoinUnit.BTC;
     }
@@ -1917,23 +1919,23 @@ export class BlueBitcoinAmount extends Component {
       case BitcoinUnit.SATS:
         sats = amount;
         break;
-      case BitcoinUnit.LOCAL_CURRENCY:
-        sats = new BigNumber(currency.fiatToBTC(amount)).multipliedBy(100000000).toString();
-        break;
+      // case BitcoinUnit.LOCAL_CURRENCY:
+      //   sats = new BigNumber(currency.fiatToBTC(amount)).multipliedBy(100000000).toString();
+      //   break;
     }
-    if (previousUnit === BitcoinUnit.LOCAL_CURRENCY && BlueBitcoinAmount.conversionCache[amount + previousUnit]) {
-      // cache hit! we reuse old value that supposedly doesnt have rounding errors
-      sats = BlueBitcoinAmount.conversionCache[amount + previousUnit];
-    }
+    // if (previousUnit === BitcoinUnit.LOCAL_CURRENCY && BlueBitcoinAmount.conversionCache[amount + previousUnit]) {
+    //   // cache hit! we reuse old value that supposedly doesnt have rounding errors
+    //   sats = BlueBitcoinAmount.conversionCache[amount + previousUnit];
+    // }
     console.log('so, in sats its', sats);
 
     const newInputValue = formatBalancePlain(sats, newUnit, false);
     console.log('and in', newUnit, 'its', newInputValue);
 
-    if (newUnit === BitcoinUnit.LOCAL_CURRENCY && previousUnit === BitcoinUnit.SATS) {
-      // we cache conversion, so when we will need reverse conversion there wont be a rounding error
-      BlueBitcoinAmount.conversionCache[newInputValue + newUnit] = amount;
-    }
+    // if (newUnit === BitcoinUnit.LOCAL_CURRENCY && previousUnit === BitcoinUnit.SATS) {
+    //   // we cache conversion, so when we will need reverse conversion there wont be a rounding error
+    //   BlueBitcoinAmount.conversionCache[newInputValue + newUnit] = amount;
+    // }
     this.props.onChangeText(newInputValue);
     if (this.props.onAmountUnitChange) this.props.onAmountUnitChange(newUnit);
   }
@@ -1947,10 +1949,12 @@ export class BlueBitcoinAmount extends Component {
     if (previousUnit === BitcoinUnit.BTC) {
       newUnit = BitcoinUnit.SATS;
     } else if (previousUnit === BitcoinUnit.SATS) {
-      newUnit = BitcoinUnit.LOCAL_CURRENCY;
-    } else if (previousUnit === BitcoinUnit.LOCAL_CURRENCY) {
       newUnit = BitcoinUnit.BTC;
-    } else {
+    }
+    // else if (previousUnit === BitcoinUnit.LOCAL_CURRENCY) {
+    //   newUnit = BitcoinUnit.BTC;
+    // }
+    else {
       newUnit = BitcoinUnit.BTC;
       previousUnit = BitcoinUnit.SATS;
     }
@@ -1976,30 +1980,30 @@ export class BlueBitcoinAmount extends Component {
 
   render() {
     const amount = this.props.amount || 0;
-    let secondaryDisplayCurrency = formatBalanceWithoutSuffix(amount, BitcoinUnit.LOCAL_CURRENCY, false);
-
+    // let secondaryDisplayCurrency = formatBalanceWithoutSuffix(amount, BitcoinUnit.LOCAL_CURRENCY, false);
+      let secondaryDisplayCurrency = ''
     // if main display is sat or btc - secondary display is fiat
     // if main display is fiat - secondary dislay is btc
     let sat;
     switch (this.state.unit) {
       case BitcoinUnit.BTC:
         sat = new BigNumber(amount).multipliedBy(100000000).toString();
-        secondaryDisplayCurrency = formatBalanceWithoutSuffix(sat, BitcoinUnit.LOCAL_CURRENCY, false);
+        // secondaryDisplayCurrency = formatBalanceWithoutSuffix(sat, BitcoinUnit.LOCAL_CURRENCY, false);
         break;
       case BitcoinUnit.SATS:
-        secondaryDisplayCurrency = formatBalanceWithoutSuffix((isNaN(amount) ? 0 : amount).toString(), BitcoinUnit.LOCAL_CURRENCY, false);
+        // secondaryDisplayCurrency = formatBalanceWithoutSuffix((isNaN(amount) ? 0 : amount).toString(), BitcoinUnit.LOCAL_CURRENCY, false);
         break;
-      case BitcoinUnit.LOCAL_CURRENCY:
-        secondaryDisplayCurrency = currency.fiatToBTC(parseFloat(isNaN(amount) ? 0 : amount));
-        if (BlueBitcoinAmount.conversionCache[isNaN(amount) ? 0 : amount + BitcoinUnit.LOCAL_CURRENCY]) {
-          // cache hit! we reuse old value that supposedly doesn't have rounding errors
-          const sats = BlueBitcoinAmount.conversionCache[isNaN(amount) ? 0 : amount + BitcoinUnit.LOCAL_CURRENCY];
-          secondaryDisplayCurrency = currency.satoshiToBTC(sats);
-        }
-        break;
+      // case BitcoinUnit.LOCAL_CURRENCY:
+      //   secondaryDisplayCurrency = currency.fiatToBTC(parseFloat(isNaN(amount) ? 0 : amount));
+      //   if (BlueBitcoinAmount.conversionCache[isNaN(amount) ? 0 : amount + BitcoinUnit.LOCAL_CURRENCY]) {
+      //     // cache hit! we reuse old value that supposedly doesn't have rounding errors
+      //     const sats = BlueBitcoinAmount.conversionCache[isNaN(amount) ? 0 : amount + BitcoinUnit.LOCAL_CURRENCY];
+      //     secondaryDisplayCurrency = currency.satoshiToBTC(sats);
+      //   }
+      //   break;
     }
 
-    if (amount === BitcoinUnit.MAX) secondaryDisplayCurrency = ''; // we don't want to display NaN
+    // if (amount === BitcoinUnit.MAX) secondaryDisplayCurrency = ''; // we don't want to display NaN
     return (
       <TouchableWithoutFeedback disabled={this.props.pointerEvents === 'none'} onPress={() => this.textInput.focus()}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>

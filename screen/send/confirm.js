@@ -137,7 +137,7 @@ export default class Confirm extends Component {
           </Text>
           <Text style={styles.valueUnit}>{' ' + loc.units[BitcoinUnit.BTC]}</Text>
         </View>
-        <Text style={styles.transactionAmountFiat}>{currency.satoshiToLocalCurrency(item.value)}</Text>
+
         <BlueCard>
           <Text style={styles.transactionDetailsTitle}>{loc.send.create_to}</Text>
           <Text testID="TransactionAddress" style={styles.transactionDetailsSubtitle}>
@@ -173,8 +173,7 @@ export default class Confirm extends Component {
           <View style={styles.cardContainer}>
             <BlueCard>
               <Text style={styles.cardText}>
-                {loc.send.create_fee}: {formatBalance(this.state.feeSatoshi, BitcoinUnit.BTC)} (
-                {currency.satoshiToLocalCurrency(this.state.feeSatoshi)})
+                {loc.send.create_fee}: {formatBalance(this.state.feeSatoshi, BitcoinUnit.BTC)}
               </Text>
               <BlueSpacing40 />
               {!!this.state.payjoinUrl && (

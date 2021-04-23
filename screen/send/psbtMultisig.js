@@ -82,7 +82,7 @@ const PsbtMultisig = () => {
   }
   destination = shortenAddress(destination.join(', '));
   const totalBtc = new BigNumber(totalSat).dividedBy(100000000).toNumber();
-  const totalFiat = currency.satoshiToLocalCurrency(totalSat);
+  // const totalFiat = currency.satoshiToLocalCurrency(totalSat);
 
   const getFee = () => {
     return wallet.calculateFeeFromPsbt(psbt);
@@ -235,9 +235,7 @@ const PsbtMultisig = () => {
           <BlueText style={[styles.textBtcUnitValue, stylesHook.textBtcUnitValue]}> {BitcoinUnit.BTC}</BlueText>
         </View>
       </View>
-      <View style={styles.containerText}>
-        <BlueText style={[styles.textFiat, stylesHook.textFiat]}>{totalFiat}</BlueText>
-      </View>
+
       <View>{destinationAddress()}</View>
     </View>
   );
@@ -245,9 +243,6 @@ const PsbtMultisig = () => {
     <>
       <View style={styles.bottomWrapper}>
         <View style={styles.bottomFeesWrapper}>
-          <BlueText style={[styles.feeFiatText, stylesHook.feeFiatText]}>
-            {loc.formatString(loc.multisig.fee, { number: currency.satoshiToLocalCurrency(getFee()) })} -{' '}
-          </BlueText>
           <BlueText>{loc.formatString(loc.multisig.fee_btc, { number: currency.satoshiToBTC(getFee()) })}</BlueText>
         </View>
       </View>
